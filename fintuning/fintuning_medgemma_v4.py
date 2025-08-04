@@ -71,6 +71,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--num_workers", type=int, default=8, help="Number of data loader workers.")
     parser.add_argument("--image_size", type=int, default=896, help="Tile image size.")
     parser.add_argument("--no_vis", action="store_true", help="Skip visualizations and checks.")
+    parser.add_argument("--output_dir", type=str, default=None, help="Where to save final model")
 
     return parser.parse_args()
 
@@ -495,11 +496,12 @@ def main() -> None:
     if accelerator.is_main_process:
         print("Starting training...")
     trainer.train()
-
-    final_out_dir = os.path.join(
+  
+    final_out_dir = args.output_dir or os.path.join(
         os.path.dirname(args.train_json),
         f"medgemma_final_v.0.1.3",
-    )
+        )   
+
     accelerator.wait_for_everyone()
     if accelerator.is_main_process:
         model.save_pretrained(final_out_dir, safe_serialization=True)
