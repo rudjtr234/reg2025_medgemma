@@ -21,18 +21,7 @@ MedGemma 모델 QLoRA 기반 Fine-Tuning 스크립트 (v0.2, 멀티 이미지/�
 7. accelerate 기반 멀티 GPU 학습 환경으로 전환 (단일 GPU 코드 → DDP/Accelerator로 통합)
 8. 사용 예시 포함 (총 8개 GPU: NVIDIA RTX 6000 Ada 사용)
 
-실행 예시:
------------
-```bash
-  accelerate launch \
-  fintuning_medgemma_v4.py \
-  --model_path /home/mts/ssd_16tb/member/jks/medgemma_reg2025/notebooks/medgemma-4b-it \
-  --train_json /home/mts/ssd_16tb/member/jks/medgemma_reg2025/notebooks/data/preprocess_tile/make_json/train_json/medgemma_tile_final_v0.1.2.json 
-  --epochs 3 \
-  --lr 3e-5 \
-  --rank 8 \
 
------------
 """
 
 import argparse
