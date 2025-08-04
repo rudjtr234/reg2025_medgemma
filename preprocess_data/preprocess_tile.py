@@ -1,7 +1,7 @@
 import os, glob, shutil
 
-SRC_TILE_DIR = "/home/mts/ssd_16tb/member/jks/medgemma_reg2025/notebooks/data/REG_2025_tile_preprocess_final_v.0.2.0"
-DEST_TILE_DIR = "/home/mts/ssd_16tb/member/jks/medgemma_reg2025/notebooks/data/REG_2025_tile_preprocess_final_v.0.2.1"
+SRC_TILE_DIR = "/your_path_directory/REG_2025_tile_preprocess_final_v.0.2.0"
+DEST_TILE_DIR = "/your_path_directory/REG_2025_tile_preprocess_final_v.0.2.1"
 MIN_SIZE_KB = 300
 
 os.makedirs(DEST_TILE_DIR, exist_ok=True)
