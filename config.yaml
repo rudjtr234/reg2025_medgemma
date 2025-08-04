@@ -1,0 +1,11 @@
+tile_filter:
+  stage: "filter_by_size_300kb"
+  source:
+    dir: /home/mts/ssd_16tb/member/jks/medgemma_reg2025/notebooks/data/REG_2025_tile_preprocess_final_v.0.2.0
+    description: "896x896 타일 중 150KB 이상 필터링된 버전"
+  destination:
+    dir: /home/mts/ssd_16tb/member/jks/medgemma_reg2025/notebooks/data/REG_2025_tile_preprocess_final_v.0.2.1
+    description: "300KB 이상으로 다시 필터링한 최종본"
+  filter:
+    min_size_kb: 300
+    extensions: ["*.jpg"]
