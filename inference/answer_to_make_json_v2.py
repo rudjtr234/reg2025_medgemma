@@ -78,10 +78,10 @@ def clean_report(text: str) -> str:
 from pathlib import Path
 
 BASE_ID    = Path("/home/mts/ssd_16tb/member/jks/medgemma_reg2025/notebooks/medgemma-4b-it")
-ADAPTER_ID = Path("/home/mts/ssd_16tb/member/jks/medgemma_reg2025/notebooks/data/preprocess_tile/make_json/train_json/medgemma_final_v.0.1.0")
-MERGE_DIR  = Path("/home/mts/ssd_16tb/member/jks/medgemma_reg2025/models/medgemma-merged_final_v0.1.0")
-IMG_DIR    = Path("/home/mts/ssd_16tb/member/jks/medgemma_reg2025/notebooks/data/REG_2025_tile_preprocess_final_v.0.2.0/")
-OUT_JSON   = Path("/home/mts/ssd_16tb/member/jks/medgemma_reg2025/notebooks/data/preprocess_tile/fintuning_result/medgemma_final_v0.1.0.json")
+ADAPTER_ID = Path("/home/mts/ssd_16tb/member/jks/medgemma_reg2025/notebooks/data/preprocess_tile/make_json/train_json/medgemma_final_v.0.1.3")
+MERGE_DIR  = Path("/home/mts/ssd_16tb/member/jks/medgemma_reg2025/models/medgemma-merged_final_v0.1.3")
+IMG_DIR    = Path("/home/mts/ssd_16tb/member/jks/medgemma_reg2025/notebooks/data/REG_2025_tile_preprocess_final_v.0.2.1/")
+OUT_JSON   = Path("/home/mts/ssd_16tb/member/jks/reg2025_medgemma/evaluation/result_json/medgemma_final_v0.1.3.json")
 DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"
 
 # Environment variables to avoid certain NCCL issues
