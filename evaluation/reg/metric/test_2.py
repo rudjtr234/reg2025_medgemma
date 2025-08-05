@@ -1,8 +1,8 @@
 import json
 from eval import REG_Evaluator
 
-GT_PATH = '/home/mts/ssd_16tb/member/jks/reg_challenge_eval/reg/metric/json/ground_truth_all.json'
-PRED_PATH = '/home/mts/ssd_16tb/member/jks/reg_challenge_eval/reg/metric/json/medgemma_final_v0.1.1.json'
+GT_PATH = '/home/mts/ssd_16tb/member/jks/reg2025_medgemma/evaluation/reg/metric/json/ground_truth_all.json'
+PRED_PATH = '/home/mts/ssd_16tb/member/jks/reg2025_medgemma/evaluation/reg/metric/json/clean_report_v0.1.0.json'
 
 EMBEDDING_MODEL = 'dmis-lab/biobert-v1.1'
 SPACY_MODEL = 'en_core_sci_lg'
