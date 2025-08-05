@@ -1,4 +1,4 @@
-D#!/usr/bin/env python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 # This script is a provided example of how to generate pathology reports
