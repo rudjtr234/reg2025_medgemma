@@ -1,3 +1,5 @@
+# kb size preprocessing
+
 import os, glob, shutil
 
 SRC_TILE_DIR = "/your_path_directory/REG_2025_tile_preprocess_final_v.0.2.0"
